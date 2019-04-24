@@ -4,6 +4,14 @@
 {% load bootstrap4 %}
 
 {# Load CSS and JavaScript #}
+<script type="text/javascript" src="/admin/jsi18n/"></script>
+<script type="text/javascript" src="/static/admin/js/core.js"></script>
+<script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js">        </script>
+<script type="text/javascript" src="/static/admin/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+<script type="text/javascript" src="/static/admin/js/actions.min.js"></script>
+<script type="text/javascript" src="/static/admin/js/calendar.js"></script>
+<script type="text/javascript" src="/static/admin/js/admin/DateTimeShortcuts.js"></script>
 {% bootstrap_css %}
 {% bootstrap_javascript jquery='full' %}
 
@@ -26,11 +34,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Add Expense Category</a>
         </li>
-        <li class="nav-item">
-            <p class="nav-link">Welcome {{request.user}} </p>
-            </li>
-        
       </ul>
     </div>
-
-  </nav>
+</nav>
+{% block content %}
+{% endblock %}
+  
