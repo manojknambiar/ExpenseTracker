@@ -1,12 +1,14 @@
 {% extends 'base.html' %}
 
+ 
+
 {% block content %}
     
     <div class="container-fluid  bg-light text-dark">
            
-                    <h4>Enter Income:</h4>
+                    <h5>Enter Income:</h5>
                     
-                   
+                   <p></p>
     <form method="POST">{% csrf_token %}
         {{ form.non_field_errors }}
         <div class="form-group row">
@@ -37,8 +39,10 @@
                 <div class="col-sm-10">{{ form.comments }}</div>
             </div>
             
-        <button type="submit" class="btn btn-outline-primary">Save</button>
+        <button type="submit" id="btnShow" class="btn btn-outline-primary">Save Me</button>
     </form>
+
+
    
 </div>
 
