@@ -1,7 +1,7 @@
 from django.forms import ModelForm
-from django.forms.widgets import SelectDateWidget
+from django.forms.widgets import SelectDateWidget, Textarea
 from .models import Income
-from django.contrib.admin.widgets import AdminDateWidget
+
 
 
 class AddIncome(ModelForm):
@@ -9,4 +9,6 @@ class AddIncome(ModelForm):
         model = Income
         fields = ['income', 'date', 'category', 'biweekly', 'comments'] 
         widgets = {
-            'date': SelectDateWidget(),}
+            'date': SelectDateWidget(),
+            'comments':Textarea(attrs={'rows':3, 'cols':30}),
+            }

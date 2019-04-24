@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from income.views import income_view
+from expense.views import index_view
 
 urlpatterns = [
-    path('', income_view),
+    path('', index_view),
+    path('addIncome/', income_view, name='addIncomeView'),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
 ]

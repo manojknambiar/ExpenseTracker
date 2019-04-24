@@ -4,14 +4,7 @@
 {% load bootstrap4 %}
 
 {# Load CSS and JavaScript #}
-<script type="text/javascript" src="/admin/jsi18n/"></script>
-<script type="text/javascript" src="/static/admin/js/core.js"></script>
-<script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js">        </script>
-<script type="text/javascript" src="/static/admin/js/jquery.min.js"></script>
-<script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
-<script type="text/javascript" src="/static/admin/js/actions.min.js"></script>
-<script type="text/javascript" src="/static/admin/js/calendar.js"></script>
-<script type="text/javascript" src="/static/admin/js/admin/DateTimeShortcuts.js"></script>
+
 {% bootstrap_css %}
 {% bootstrap_javascript jquery='full' %}
 
@@ -26,10 +19,10 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Add Income</a>
+          <a class="nav-link" href="/addIncome">Add Income</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Add Expense Category</a>
