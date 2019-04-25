@@ -11,7 +11,7 @@ class Income(models.Model):
               ('something else', 'Something else'))       
     income = models.FloatField()
     date = models.DateField(default=datetime.now)
-    category = models.CharField(max_length=7,choices=cat, default='Salary')
+    category = models.CharField(max_length=7, choices=cat, default='Salary')
     biweekly = models.BooleanField(default=True)
     comments = models.TextField(blank=True, null=True)
     
